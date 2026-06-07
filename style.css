@@ -7,13 +7,16 @@
 
 header{
     background-color: #f8f5f0;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    width: 100%;
 }
 
 nav{
     display: flex;
     align-items: center;
-    width: 100%;
-    margin: 0;
+    margin: auto;
 }
 
 nav ul{
@@ -22,7 +25,7 @@ nav ul{
 }
 
 nav li{
-    margin: 0% 20%;
+    margin-left: 30px;
 }
 
 nav a{
@@ -32,13 +35,13 @@ nav a{
 }
 
 .logo img{
+    flex: 1;
     max-width: 150px;
     height: auto;
-    margin-right: 25vh;
 }
 
 .titulo{
-    /*Usamos IA para colocar a imagem no fundo dos textos do início */
+    /*Usamos o Gemini para colocar a imagem no fundo dos textos do início */
     padding: 20px;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1000') center/cover;
     width: 100%;
@@ -95,7 +98,7 @@ nav a{
     padding: 80px 20px;
 }
 
-.container-sobre {
+.container-sobre{
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
@@ -109,36 +112,47 @@ nav a{
     padding-right: 25px;
 }
 
-.sobre-imagem img {
+.sobre-imagem img{
     width: 100%;
     border-radius: 15px;
 }
 
-.sobre-texto {
+.sobre-texto{
     width: 50%;
     height: auto;
 }
 
-.sobre-texto h2 {
+.sobre-texto h2{
     color: #5d4037;
     margin-bottom: 20px;
     font-size: 2rem;
 }
 
-.sobre-texto p {
+.sobre-texto p{
     color: #666;
-    line-height: 1.6; /* Melhora a legibilidade do texto */
+    line-height: 1.6;
     margin-bottom: 15px;
 }
 
-footer {
+footer{
     background-color: #5d4037;
     color: white;
     text-align: center;
     padding: 40px;
 }
 
-/*Usamos IA para deixar o site responsivo */ 
+footer{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+footer img{
+    width: 250px;
+    height: 100%;
+}
+
+/*Usamos o Gemini para deixar o site responsivo */
 
 @media (max-width: 768px) {
     
@@ -164,7 +178,7 @@ footer {
     margin: 0px;
     }
 
-    /* 2. O Título do Hero: diminuir a fonte para não quebrar feio */
+    /* 2. O Título do Cardápio: diminuir a fonte para não quebrar feio */
     .titulo h1 {
         font-size: 1.8rem;
         padding: 0 10px;
